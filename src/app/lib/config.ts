@@ -61,8 +61,31 @@ const BitTorrent = {
   testnet: true,
 };
 
+const zkEVMCardonaTestnet = {
+  id: 2442,
+  name: "Polygon zkEVM Cardona Testnet",
+  network: "Polygon zkEVM Cardona Testnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "Polygon zkEVM Cardona Testnet",
+    symbol: "ETH",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://polygon-zkevm-cardona.blockpi.network/v1/rpc/public"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Apothem Explorer",
+      url: "https://cardona-zkevm.polygonscan.com",
+    },
+  },
+  testnet: true,
+};
+
 export const config = defaultWagmiConfig({
-  chains: [BitTorrent],
+  chains: [zkEVMCardonaTestnet],
   projectId,
   metadata,
   ssr: true,

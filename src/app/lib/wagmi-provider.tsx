@@ -22,10 +22,18 @@ const BitTorrent = {
   rpcUrl: "https://pre-rpc.bt.io/",
 } as any;
 
+const zkEVMCardonaTestnet = {
+  chainId: 2442,
+  name: "Polygon zkEVM Cardona Testnet",
+  currency: "ETH",
+  explorerUrl: "https://cardona-zkevm.polygonscan.com",
+  rpcUrl: "https://polygon-zkevm-cardona.blockpi.network/v1/rpc/public",
+} as any;
+
 createWeb3Modal({
   wagmiConfig: config,
   projectId,
-  defaultChain: BitTorrent,
+  defaultChain: zkEVMCardonaTestnet,
   enableAnalytics: true, // Optional
   themeMode: "light",
 });
