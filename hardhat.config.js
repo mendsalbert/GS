@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 const fs = require("fs");
-const privateKey = fs.readFileSync("secret.txt").toString();
+const privateKey = fs.readFileSync("secrete.txt").toString();
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   defaultNetwork: "sepolia",
@@ -21,7 +21,6 @@ module.exports = {
     zkEVMCardonaTestnet: {
       url: "https://polygon-zkevm-cardona.blockpi.network/v1/rpc/public",
       accounts: [privateKey],
-      gasPrice: 1000000000,
     },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com",
