@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chainlink/contracts": "^1.1.0",
     "@glidejs/glide": "^3.6.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
