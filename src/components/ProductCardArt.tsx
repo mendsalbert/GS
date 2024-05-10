@@ -42,8 +42,10 @@ export interface ProductCardProps {
 }
 
 const ProductCardArt: FC<any> = ({ className = "", data, art }) => {
-  const { description, price, title, imageUrl, source, id } = data;
-  const ethPrice = ethers.utils.formatEther(price.toString()) as any;
+  console.log(data);
+
+  const { description, priceUSD, title, imageUrl, source, id } = data;
+  const ethPrice = ethers.utils.formatEther(priceUSD.toString()) as any;
 
   const user = useAppSelector((state) => state.users.currentUser) as any;
   const dispatch = useAppDispatch();

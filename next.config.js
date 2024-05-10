@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     typedRoutes: true,
+    optimizePackageImports: ["my-lib"],
   },
   images: {
     remotePatterns: [
